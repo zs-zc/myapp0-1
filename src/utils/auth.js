@@ -1,4 +1,4 @@
-import Cookies from "js-Cookies"
+import Cookies from "js-cookie"
 
 const TokenKey = "vue admin template zs token"
 
