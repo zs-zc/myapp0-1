@@ -8,13 +8,9 @@ export const constantRoutes = [
   {
     path: '/login',
     name: 'login',
-    component: ()=>import("@/views/login/index")
+    component: () => import("@/views/login/index")
   },
-  {
-    path: '/404',
-    name: '404',
-    component: err404
-  },
+
   {
     path: '/',
     component: layout,
@@ -22,15 +18,20 @@ export const constantRoutes = [
     children: [{
       path: 'home',
       name: 'home',
-      component: ()=>import("@/views/Home/index"),
+      component: () => import("@/views/Home/index"),
       meta: { title: '首页' }
     }]
   },
   {
-    path:'/mine',
-    name:'mine',
-    component:()=>import("@/views/mine/index")
-  }
+    path: '/mine',
+    name: 'mine',
+    component: () => import("@/views/mine/index")
+  },
+  {
+    path: '/404',
+    name: '404',
+    component: err404
+  },
 ]
 
 // const router = new VueRouter({

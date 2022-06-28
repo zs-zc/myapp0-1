@@ -6,6 +6,7 @@
 module.exports = {
   assetsDir: "assets",
   lintOnSave: false,
+  transpileDependencies: true,
   devServer: {
     proxy: {
       "/dev-api": {

@@ -11,7 +11,7 @@
         <el-input v-model="ruleForm.username"></el-input>
       </el-form-item>
       <el-form-item label="password" prop="password">
-        <el-input v-model="ruleForm.password" @keydown.native="login"></el-input>
+        <el-input v-model="ruleForm.password" @keydown.enter.native.="login"></el-input>
       </el-form-item>
     </el-form>
     <el-button @click.native.prevent="login">登录</el-button>
